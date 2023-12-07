@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: ecommerce
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: minha_database
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: sql
+    ports:
+      - "3306:3306"
+    
