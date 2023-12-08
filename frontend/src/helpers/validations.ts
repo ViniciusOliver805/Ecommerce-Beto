@@ -1,8 +1,3 @@
 export const getAntdFieldsRequireRule = (message: string) => {
-  return [
-    {
-      required: true,
-      message: message,
-    },
-  ];
+  return [{ required: true, message }];
 };
